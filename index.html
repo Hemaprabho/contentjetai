@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzVCRTRGRiIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI0U5NkFGRiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxwYXRoIGQ9Ik0xMCAxMCBMOTAgNTAgTDEwIDkwIEwzMCA1MCBaIiBmaWxsPSJ1cmwoI2cpIi8+PC9zdmc+">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ContentJet AI - Create Viral Content in 5 Seconds</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@400;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@400;600;700;800&display=swap"></noscript>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sora: ['Sora', 'sans-serif'],
+              inter: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              accent: {
+                start: '#5be4ff',
+                end: '#e96aff',
+              }
+            },
+            animation: {
+              'gradient': 'gradient 8s linear infinite',
+              'background-shine': 'background-shine 2.5s linear infinite',
+              'float': 'float 6s ease-in-out infinite',
+              'pulse-glow': 'pulse-glow 4s ease-in-out infinite',
+              'particle-float': 'particle-float 40s linear infinite',
+              'fade-in': 'fade-in 0.5s ease-in-out forwards',
+              'fade-in-up': 'fade-in-up 0.5s ease-in-out forwards',
+              'toast-in': 'toast-in 0.5s cubic-bezier(0.23, 1, 0.32, 1) forwards',
+              'sparkle': 'sparkle 1.5s ease-in-out infinite',
+              'button-glow': 'button-glow 2s ease-in-out infinite',
+              'xp-fill': 'xp-fill 1s ease-out forwards',
+            },
+            keyframes: {
+              gradient: {
+                to: { 'background-position': '200% center' },
+              },
+              'background-shine': {
+                'from': { backgroundPosition: '200% 0' },
+                'to': { backgroundPosition: '-200% 0' },
+              },
+              float: {
+                '0%, 100%': { transform: 'translateY(0px) rotate(0deg)' },
+                '50%': { transform: 'translateY(-25px) rotate(2deg)' },
+              },
+              'pulse-glow': {
+                '0%, 100%': { 
+                  boxShadow: '0 0 25px -5px rgba(91, 228, 255, 0.5), 0 0 35px -10px rgba(233, 106, 255, 0.5)' 
+                },
+                '50%': { 
+                  boxShadow: '0 0 50px 10px rgba(91, 228, 255, 0.8), 0 0 75px 10px rgba(233, 106, 255, 0.8)'
+                },
+              },
+              'particle-float': {
+                  '0%': { transform: 'translateY(0) rotate(0deg)', opacity: '1' },
+                  '100%': { transform: 'translateY(-100vh) rotate(720deg)', opacity: '0' },
+              },
+              'fade-in': {
+                'from': { opacity: '0', transform: 'translateY(10px)' },
+                'to': { opacity: '1', transform: 'translateY(0)' },
+              },
+              'fade-in-up': {
+                'from': { opacity: '0', transform: 'translateY(20px)' },
+                'to': { opacity: '1', transform: 'translateY(0)' },
+              },
+              'toast-in': {
+                'from': { transform: 'translateY(20px) scale(0.9)', opacity: '0' },
+                'to': { transform: 'translateY(0) scale(1)', opacity: '1' },
+              },
+              sparkle: {
+                '0%, 100%': { transform: 'scale(0)', opacity: '0' },
+                '50%': { transform: 'scale(1)', opacity: '1' },
+                '60%, 90%': { transform: 'scale(1)', opacity: '0' },
+              },
+              'button-glow': {
+                '0%, 100%': { boxShadow: '0 0 15px -5px theme(colors.accent.start), 0 0 20px -10px theme(colors.accent.end)' },
+                '50%': { boxShadow: '0 0 25px 0px theme(colors.accent.start), 0 0 35px -5px theme(colors.accent.end)' },
+              },
+              'xp-fill': {
+                'from': { width: '0%' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        transition: background-color 0.5s ease;
+      }
+      .dashboard-bg {
+        background-color: #05050A;
+        background-image: linear-gradient(180deg, #0f0c29 0%, #05050A 50%);
+      }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.1.1/",
+    "react": "https://esm.sh/react@^19.1.1",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.1/",
+    "framer-motion": "https://esm.sh/framer-motion@^12.23.12",
+    "vite": "https://esm.sh/vite@^7.1.1",
+    "recharts": "https://esm.sh/recharts@^3.1.2",
+    "@google/genai": "https://esm.sh/@google/genai@^1.13.0",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.0.0",
+    "@netlify/functions": "https://esm.sh/@netlify/functions@^4.2.1"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-[#05050A] font-inter text-gray-300" style="background-color: #05050A;">
+    <div id="root"></div>
+    <noscript>
+      <div style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; color: white; font-family: sans-serif;">
+        You need to enable JavaScript to run this application.
+      </div>
+    </noscript>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
